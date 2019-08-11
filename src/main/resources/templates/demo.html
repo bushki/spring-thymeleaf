@@ -5,7 +5,18 @@
     <title>Thymeleaf Demo</title>
 </head>
 <body>
-<div th:text="${name}"></div>
-<span th:text="${message}"></span>
+<h3>Exam Results</h3>
+<div th:if="${grade} >= 60">
+    You passed the exam.
+    <div th:switch="${GPA}">You
+        <span th:case="A">are Excellent</span>
+        <span th:case="B">are Good</span>
+        <span th:case="C">are Okay</span>
+        <span th:case="D">need improvement</span>
+    </div>
+</div>
+<div th:if="${grade} < 60">
+    You failed the exam.
+</div>
 </body>
 </html>
