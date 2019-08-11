@@ -1,0 +1,2 @@
+One thing you need to add to your html header is xmlns:th="http://www.w3.org/1999/xhtml",
+which tells the html I am using thymeleaf engine.
