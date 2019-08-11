@@ -9,6 +9,7 @@ public class UserController {
 
     @RequestMapping("demo")
     public String demo(Model model) {
+        model.addAttribute("name", "Luis");
         model.addAttribute("message", "Hello Thymeleaf");
         // return to templates/demo.html page.
         return "demo";
